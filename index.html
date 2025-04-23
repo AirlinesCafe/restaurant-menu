@@ -8,10 +8,19 @@
 </head>
 <body>
   <div class="menu-container">
-    <h1>📋 Airlines Cafe </h1>
+    <h1> Airlines Cafe </h1>
+		<h2> 📋Our Menu </h2>
+		
+	<div class="toggle-buttons">
+      <button onclick="showMenu('Starters')"> Starters</button>
+      <button onclick="showMenu('maincourse')"> Main Course</button>
+      <button onclick="showMenu('rice')"> Rice/Pasta/Noodles</button>
+	  <button onclick="showMenu('desserts')"> Desserts</button>
+	  <button onclick="showMenu('beverages')"> Beverages</button>
+    </div>
 
     <section>
-      <h2>Starters</h2>
+      <div id="Starters" class="menu-section">
 		<h3>Veg</h3>
             <div class="menu-item"><span>Manchurian (veg/gobi/paneer/mushroom/babycorn)</span></div>
       <div class="menu-item"><span>Choice of Chili (veg/gobi/paneer/mushroom/babycorn)</span></div>
@@ -40,10 +49,11 @@
 	    <div class="menu-item"><span>Double Egg Omelette</span></div>
       <div class="menu-item"><span>Chilli Chicken</span></div>
 	    <div class="menu-item"><span>Tnadoori Chicken (Half/Full)</span></div>
-    </section>
+    </div>
+	</section>
 	
     <section>
-      <h2>Main Course</h2>
+      <div id="maincourse" class="menu-section">
 	  <h3>Veg</h3>
       <div class="menu-item"><span>Dal Fry/Tadka</span></div>
       <div class="menu-item"><span>Dal Makhani</span></div>
@@ -66,19 +76,67 @@
 	  <div class="menu-item"><span>Chicken Hyderbadi</span></div>
       <div class="menu-item"><span>Egg Burji</span></div>
 	  <div class="menu-item"><span>Egg Masala</span></div>
-    </section>
+	  
+	  <h3>India Breads</h3>
+	  <div class="menu-item"><span>Roti/Butter Roti</span></div>
+      <div class="menu-item"><span>Naan/Butter Naan</span></div>
+	  <div class="menu-item"><span>Kulcha/Butter Kulcha</span></div>
+	  <div class="menu-item"><span>Phulka/Chapati</span></div>
+
+    </div>
+	</section>
+	
+	 <section>
+      <div id="rice" class="menu-section">
+      <div class="menu-item"><span>Jeera Rice/ Ghee Rice</span></div>
+      <div class="menu-item"><span>Veg Pulav</span></div>
+	  <div class="menu-item"><span>Fried Rice (Veg/Egg/Chicken)</span></div>
+      <div class="menu-item"><span>Hakka Noodles (Veg/Egg/Chicken)</span></div>
+	  <div class="menu-item"><span>Schezwan Fried Rice (Veg/Egg/Chicken)</span></div>
+      <div class="menu-item"><span>Schezwan Noodles (Veg/Egg/Chicken)</span></div>
+	  <div class="menu-item"><span>Veg Biryani</span></div>
+      <div class="menu-item"><span>Paneer Biryani</span></div>
+	  <div class="menu-item"><span>Mushroom Biryani</span></div>
+      <div class="menu-item"><span>Egg Biryani</span></div>
+	  <div class="menu-item"><span>Chicken Biryani</span></div>
+	  <div class="menu-item"><span>Pasta Arrabiata (Veg/Chicken)</span></div>
+      <div class="menu-item"><span>Pasta Arrabiata (Veg/Chicken)</span></div>
+    </div>
+	</section>
 
     <section>
-      <h2>Desserts</h2>
+      <div id="desserts" class="menu-section">
       <div class="menu-item"><span>Chocolate Cake</span></div>
       <div class="menu-item"><span>Ice Cream</span></div>
-    </section>
+    </div>
+	</section>
 
     <section>
-      <h2>Beverages</h2>
+      <div id="beverages" class="menu-section">
       <div class="menu-item"><span>Coffee</span></div>
       <div class="menu-item"><span>Lemonade</span></div>
-    </section>
+    </div>
+	</section>
   </div>
+  
+    <script>
+    function showMenu(type) {
+      const Starters = document.getElementById('Starters');
+      const maincourse = document.getElementById('maincourse');
+	  const rice = document.getElementById('rice');
+      const desserts = document.getElementById('desserts');
+	  const beverages = document.getElementById('beverages');
+
+      Starters.style.display = (type === 'Starters' || type === 'full') ? 'block' : 'none';
+      maincourse.style.display = (type === 'maincourse' || type === 'full') ? 'block' : 'none';
+	  rice.style.display = (type === 'rice' || type === 'full') ? 'block' : 'none';
+	  desserts.style.display = (type === 'desserts' || type === 'full') ? 'block' : 'none';
+      beverages.style.display = (type === 'beverages' || type === 'full') ? 'block' : 'none';
+    }
+
+    // Default to full menu
+    showMenu('Starters');
+  </script>
+  
 </body>
 </html>
