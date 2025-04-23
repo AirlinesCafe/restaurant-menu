@@ -11,31 +11,84 @@
     <h1>📋 Airlines Cafe </h1>
 
     <div class="tabs">
-      <button class="tab-button active" onclick="showTab('veg')">🥦 Veg</button>
+      <button class="tab-button active" onclick="showTab('All')"> Menu</button>
+      <button class="tab-button" onclick="showTab('veg')">🥦 Veg</button>
       <button class="tab-button" onclick="showTab('nonveg')">🍗 Non-Veg</button>
     </div>
 
+    <div id="All" class="tab-content">
     <div id="veg" class="tab-content">
       <h2>Starters</h2>
-      <div class="menu-item"><span>Tomato Soup</span><span class="price">$4.99</span></div>
-      <div class="menu-item"><span>Garlic Bread</span><span class="price">$3.99</span></div>
+      <div class="menu-item"><span>Manchurian (veg/gobi/paneer/mushroom/babycorn)</span></div>
+      <div class="menu-item"><span>Choice of Chili (veg/gobi/paneer/mushroom/babycorn)</span></div>
+	    <div class="menu-item"><span>Choice of 65 (gobi/paneer/mushroom/babycorn)</span></div>
+      <div class="menu-item"><span>Crispy Fried Vegetables</span></div>
+	    <div class="menu-item"><span>Veg/Panner Spring Roll</span></div>
+      <div class="menu-item"><span>French Fries (Peri Peri)</span></div>
+	    <div class="menu-item"><span>Papad (Roasted/Masala)</span></div>
+      <div class="menu-item"><span>Loaded Nachos</span></div>
+	    <div class="menu-item"><span>Paneer Tikka</span></div>
+      <div class="menu-item"><span>Harabhara Kebab</span></div>
+	    <div class="menu-item"><span>Golden Babycorn</span></div>
+      <div class="menu-item"><span>American Crispy Corn</span></div>
+	    <div class="menu-item"><span>Mushroom Pepper Dry</span></div>
+      <div class="menu-item"><span>Garlic Bread</span></div>
+	    <div class="menu-item"><span>Tomato Soup</span></div>
+      <div class="menu-item"><span>Garlic Bread</span></div>
+	    <div class="menu-item"><span>Tomato Soup</span></div>
+      <div class="menu-item"><span>Garlic Bread</span></div>
+	    <div class="menu-item"><span>Tomato Soup</span></div>
+      <div class="menu-item"><span>Garlic Bread</span></div>
 
       <h2>Main Course</h2>
-      <div class="menu-item"><span>Vegetarian Pasta</span><span class="price">$10.99</span></div>
+        <div class="menu-item"><span>Dal Fry/Tadka</span></div>
+        <div class="menu-item"><span>Dal Makhani</span></div>
+	      <div class="menu-item"><span>Palak Paneer</span></div>
+        <div class="menu-item"><span>Paneer Butter Masala</span></div>
+	      <div class="menu-item"><span>Paneer Tikka Masala</span></div>
+        <div class="menu-item"><span>Kadai (Veg/Paneer)</span></div>
+	      <div class="menu-item"><span>Veg Kholapuri</span></div>
+        <div class="menu-item"><span>Veg Hyderbadi</span></div>
+	      <div class="menu-item"><span>Kaju Masala</span></div>
+        <div class="menu-item"><span>Mushroom Masala</span></div>
+	      <div class="menu-item"><span>Channa Masala</span></div>
+        <div class="menu-item"><span>Bhindi Masala/Fry</span></div>
+
+       <h2>Desserts</h2>
+        <div class="menu-item"><span>Chocolate Cake</span></div>
+        <div class="menu-item"><span>Ice Cream</span></div>
+
+      <h2>Beverages</h2>
+        <div class="menu-item"><span>Coffee</span></div>
+        <div class="menu-item"><span>Lemonade</span></div>
     </div>
 
     <div id="nonveg" class="tab-content hidden">
+      <h2>Starters</h2>
+      <div class="menu-item"><span>Manchurian (egg/Chicken)</span></div>
+      <div class="menu-item"><span>Choice of Chili (egg/Chicken)</span></div>
+	    <div class="menu-item"><span>Chicken 65</span></div>
+      <div class="menu-item"><span>Chicken Kebab</span></div>
+	    <div class="menu-item"><span>Chicken Lollipop (6pcs)</span></div>
+      <div class="menu-item"><span>Chicken Pepper Dry (Peri Peri)</span></div>
+	    <div class="menu-item"><span>Lemon Chicken (Roasted/Masala)</span></div>
+      <div class="menu-item"><span>Chicken Tikka</span></div>
+      <div class="menu-item"><span>Loaded Chicken Nachos</span></div>
+	    <div class="menu-item"><span>Double Egg Omelette</span></div>
+      <div class="menu-item"><span>Chilli Chicken</span></div>
+	    <div class="menu-item"><span>Tnadoori Chicken (Half/Full)</span></div>
+                  
       <h2>Main Course</h2>
-      <div class="menu-item"><span>Grilled Chicken</span><span class="price">$12.99</span></div>
+      	  <div class="menu-item"><span>Butter Chicken</span></div>
+          <div class="menu-item"><span>Kadai Chicken</span></div>
+	        <div class="menu-item"><span>Chicken Tikka Masala</span></div>
+          <div class="menu-item"><span>Chicken Kholapuri</span></div>
+	        <div class="menu-item"><span>Chicken Hyderbadi</span></div>
+          <div class="menu-item"><span>Egg Burji</span></div>
+	        <div class="menu-item"><span>Egg Masala</span></div>
 
-      <h2>Desserts</h2>
-      <div class="menu-item"><span>Chocolate Cake</span><span class="price">$5.49</span></div>
-      <div class="menu-item"><span>Ice Cream</span><span class="price">$3.99</span></div>
-
-      <h2>Beverages</h2>
-      <div class="menu-item"><span>Coffee</span><span class="price">$2.99</span></div>
-      <div class="menu-item"><span>Lemonade</span><span class="price">$2.49</span></div>
-    </div>
+      </div>
+     </div>
   </div>
 
   <script>
