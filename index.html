@@ -8,31 +8,45 @@
 </head>
 <body>
   <div class="menu-container">
-    <h1>📋 Our Restaurant Menu</h1>
+    <h1>📋 Airlines Cafe </h1>
 
-    <section>
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab('veg')">🥦 Veg</button>
+      <button class="tab-button" onclick="showTab('nonveg')">🍗 Non-Veg</button>
+    </div>
+
+    <div id="veg" class="tab-content">
       <h2>Starters</h2>
       <div class="menu-item"><span>Tomato Soup</span><span class="price">$4.99</span></div>
       <div class="menu-item"><span>Garlic Bread</span><span class="price">$3.99</span></div>
-    </section>
 
-    <section>
+      <h2>Main Course</h2>
+      <div class="menu-item"><span>Vegetarian Pasta</span><span class="price">$10.99</span></div>
+    </div>
+
+    <div id="nonveg" class="tab-content hidden">
       <h2>Main Course</h2>
       <div class="menu-item"><span>Grilled Chicken</span><span class="price">$12.99</span></div>
-      <div class="menu-item"><span>Vegetarian Pasta</span><span class="price">$10.99</span></div>
-    </section>
 
-    <section>
       <h2>Desserts</h2>
       <div class="menu-item"><span>Chocolate Cake</span><span class="price">$5.49</span></div>
       <div class="menu-item"><span>Ice Cream</span><span class="price">$3.99</span></div>
-    </section>
 
-    <section>
       <h2>Beverages</h2>
       <div class="menu-item"><span>Coffee</span><span class="price">$2.99</span></div>
       <div class="menu-item"><span>Lemonade</span><span class="price">$2.49</span></div>
-    </section>
+    </div>
   </div>
+
+  <script>
+    function showTab(tab) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-button');
+      tabs.forEach(t => t.classList.add('hidden'));
+      buttons.forEach(b => b.classList.remove('active'));
+      document.getElementById(tab).classList.remove('hidden');
+      event.target.classList.add('active');
+    }
+  </script>
 </body>
 </html>
