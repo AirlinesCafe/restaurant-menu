@@ -22,3 +22,13 @@
 .tab-content.hidden {
   display: none;
 }
+
+body {
+  padding: 20px;
+  background: #fefefe;
+  text-align: center;
+}
+h1 {
+  color: #c0392b;
+  font-family: Arial, sans-serif;
+}
