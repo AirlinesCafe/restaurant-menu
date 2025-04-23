@@ -10,12 +10,13 @@
   <div class="menu-container">
     <h1>📋 Airlines Cafe </h1>
 
-    <div class="tabs">
-      <button class="tab-button" onclick="showTab('veg')">🥦 Veg</button>
-      <button class="tab-button" onclick="showTab('nonveg')">🍗 Non-Veg</button>
+    <div class="toggle-buttons">
+      <button onclick="showMenu('full')">📋 Full Menu</button>
+      <button onclick="showMenu('veg')">🥦 Veg Only</button>
+      <button onclick="showMenu('nonveg')">🍗 Non-Veg Only</button>
     </div>
 
-    <div id="veg" class="tab-content">
+    <div id="veg" class="menu-section">
       <h2>Starters</h2>
       <div class="menu-item"><span>Manchurian (veg/gobi/paneer/mushroom/babycorn)</span></div>
       <div class="menu-item"><span>Choice of Chili (veg/gobi/paneer/mushroom/babycorn)</span></div>
@@ -61,7 +62,7 @@
         <div class="menu-item"><span>Lemonade</span></div>
     </div>
 
-    <div id="nonveg" class="tab-content hidden">
+   <div id="nonveg" class="menu-section">
       <h2>Starters</h2>
       <div class="menu-item"><span>Manchurian (egg/Chicken)</span></div>
       <div class="menu-item"><span>Choice of Chili (egg/Chicken)</span></div>
@@ -85,17 +86,31 @@
           <div class="menu-item"><span>Egg Burji</span></div>
 	        <div class="menu-item"><span>Egg Masala</span></div>
      </div>
+	  
+	<div id="common" class="menu-section">
+      		<h2>Desserts</h2>
+     		 <div class="menu-item"><span>Chocolate Cake</span><span class="price">$5.49</span></div>
+     		 <div class="menu-item"><span>Ice Cream</span><span class="price">$3.99</span></div>
+
+    		<h2>Beverages</h2>
+     		 <div class="menu-item"><span>Coffee</span><span class="price">$2.99</span></div>
+    		 <div class="menu-item"><span>Lemonade</span><span class="price">$2.49</span></div>
+   	 </div>
   </div>
 
   <script>
-    function showTab(tab) {
-      const tabs = document.querySelectorAll('.tab-content');
-      const buttons = document.querySelectorAll('.tab-button');
-      tabs.forEach(t => t.classList.add('hidden'));
-      buttons.forEach(b => b.classList.remove('active'));
-      document.getElementById(tab).classList.remove('hidden');
-      event.target.classList.add('active');
+    function showMenu(type) {
+      const veg = document.getElementById('veg');
+      const nonveg = document.getElementById('nonveg');
+      const common = document.getElementById('common');
+
+      veg.style.display = (type === 'veg' || type === 'full') ? 'block' : 'none';
+      nonveg.style.display = (type === 'nonveg' || type === 'full') ? 'block' : 'none';
+      common.style.display = 'block';
     }
+
+    // Default to full menu
+    showMenu('full');
   </script>
 </body>
 </html>
