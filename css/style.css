@@ -28,7 +28,9 @@ body {
   background: #fefefe;
   text-align: center;
 }
+
 h1 {
+  text-align: center;
   color: #c0392b;
   font-family: Arial, sans-serif;
 }
