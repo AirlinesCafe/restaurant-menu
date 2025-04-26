@@ -24,19 +24,19 @@ body{
 .nav{
 	margin-top: 20px;
     position: relative;
-    center: -80px;
+    center: -380px;
 	font-size: 198px;
 }
 .menunav{
 	margin-top: 50px;
 	margin-left: 0px;
     color:orange;
-    font-size: 98px;
 }
 a{
     margin-top: 20px;
     padding:5px 15px;
     color:orange;
+    font-size: 198px;
     text-decoration:none;
 }
 a:hover{
