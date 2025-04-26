@@ -25,16 +25,16 @@ body{
 	margin-top: 20px;
     position: relative;
     center: -180px;
-	font-size: 78px;
+	font-size: 198px;
 }
 .menunav{
 	margin-top: 50px;
 	margin-left: 0px;
     color:orange;
-    font-size: 58px;
+    font-size: 98px;
 }
 a{
-	margin-top: 20px;
+    margin-top: 20px;
     padding:5px 15px;
     color:orange;
     text-decoration:none;
