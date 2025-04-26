@@ -17,7 +17,7 @@ body{
     padding:0px 40px;
 }
 .logo{
-	margin-top: 40px;
+	margin-top: 60px;
     font-size: 40px;
     color:orange;
 }
@@ -25,6 +25,7 @@ body{
 		margin-top: 20px;
     position: relative;
     center:-180px;
+	font-size: 28px;
 }
 .menunav{
 	margin-top: 50px;
