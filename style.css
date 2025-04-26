@@ -81,6 +81,9 @@ h3{
     display: flex;
     justify-content: space-evenly;
     padding-top:65px;
+	padding-bottom:65px;
+	margin-top: 40px;
+	margin-top: 40px;
     align-items:center;
 }
 .right{
