@@ -1,142 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Restaurant Menu</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <div class="menu-container">
-    <h1> Airlines Cafe </h1>
-		<h2> 📋Our Menu </h2>
+<html>
+    <head>
+        <title>Restaurant Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="top">
+            <div class="logo">AirlinesCafe</div>
+            <div class="nav">
+                <a href="#" onclick="showOption('home')">Home</a>
+                <a href="#" onclick="showOption('menu')">Menu</a>
+                
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-search"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+	<div id="home" class="home-container">
+        <div class="heading" >
+            <div class="left">
+                <p>Are You Hungry?</p>
+                <h1>Don't Wait</h1>
+                <p>Let start to order food now</p>
+
+                <button onclick="showOption('menu')">Check out Menu</button>
+            </div>
+		</div>
+	</div>
 		
-	<div class="toggle-buttons">
-      		<button onclick="showMenu('Starters')"> Starters</button>
-      		<button onclick="showMenu('maincourse')"> Main Course</button>
-      		<button onclick="showMenu('rice')"> Rice/Pasta/Noodles</button>
-	 	<button onclick="showMenu('desserts')"> Desserts</button>
-	 	<button onclick="showMenu('beverages')"> Beverages</button>
-   	</div>
-
-    <section>
-      <div id="Starters" class="menu-section">
-	<h3>Veg</h3>
-	      <div class="menu-item"><span>Manchurian (veg/gobi/paneer/mushroom/babycorn)</span></div>
-	      <div class="menu-item"><span>Choice of Chili (veg/gobi/paneer/mushroom/babycorn)</span></div>
-	      <div class="menu-item"><span>Choice of 65 (gobi/paneer/mushroom/babycorn)</span></div>
-	      <div class="menu-item"><span>Crispy Fried Vegetables</span></div>
-	      <div class="menu-item"><span>Veg/Panner Spring Roll</span></div>
-	      <div class="menu-item"><span>French Fries (Peri Peri)</span></div>
-	      <div class="menu-item"><span>Papad (Roasted/Masala)</span></div>
-	      <div class="menu-item"><span>Loaded Nachos</span></div>
-	      <div class="menu-item"><span>Paneer Tikka</span></div>
-	      <div class="menu-item"><span>Harabhara Kebab</span></div>
-	      <div class="menu-item"><span>Golden Babycorn</span></div>
-	      <div class="menu-item"><span>American Crispy Corn</span></div>
-	      <div class="menu-item"><span>Mushroom Pepper Dry</span></div>
+	<div id="menu" class="menu-container">
+			<div class="toggle-buttons">
+				<p style="text-align:left;">
+					<a href="#" onclick="showMenu('Starters')">Starters</a> |
+					<a href="#" onclick="showMenu('maincourse')">Main Course</a> |
+					<a href="#" onclick="showMenu('rice')">Rice/Pasta/Noodles</a> |
+					<a href="#" onclick="showMenu('desserts')"> Desserts</a> |
+					<a href="#" onclick="showMenu('beverages')"> Beverages</a> |
+				</p>
+			</div>
+				<section>
+					<div id="Starters" class="menu-section">
+						<h2>Veg</h2>
+							<div class="menu-item"><span>Manchurian (veg/gobi/paneer/mushroom/babycorn)</span></div>
+							<div class="menu-item"><span>Choice of Chili (veg/gobi/paneer/mushroom/babycorn)</span></div>
+							<div class="menu-item"><span>Choice of 65 (gobi/paneer/mushroom/babycorn)</span></div>
+							<div class="menu-item"><span>Crispy Fried Vegetables</span></div>
+							<div class="menu-item"><span>Veg/Panner Spring Roll</span></div>
+							<div class="menu-item"><span>French Fries (Peri Peri)</span></div>
+							<div class="menu-item"><span>Papad (Roasted/Masala)</span></div>
+							<div class="menu-item"><span>Loaded Nachos</span></div>
+							<div class="menu-item"><span>Paneer Tikka</span></div>
+							<div class="menu-item"><span>Harabhara Kebab</span></div>
+							<div class="menu-item"><span>Golden Babycorn</span></div>
+							<div class="menu-item"><span>American Crispy Corn</span></div>
+							<div class="menu-item"><span>Mushroom Pepper Dry</span></div>
+						<h2>NonVeg</h2>
+							<div class="menu-item"><span>Manchurian (egg/Chicken)</span></div>
+							<div class="menu-item"><span>Choice of Chili (egg/Chicken)</span></div>
+							<div class="menu-item"><span>Chicken 65</span></div>
+							<div class="menu-item"><span>Chicken Kebab</span></div>
+							<div class="menu-item"><span>Chicken Lollipop (6pcs)</span></div>
+							<div class="menu-item"><span>Chicken Pepper Dry (Peri Peri)</span></div>
+							<div class="menu-item"><span>Lemon Chicken (Roasted/Masala)</span></div>
+							<div class="menu-item"><span>Chicken Tikka</span></div>
+							<div class="menu-item"><span>Loaded Chicken Nachos</span></div>
+							<div class="menu-item"><span>Double Egg Omelette</span></div>
+							<div class="menu-item"><span>Chilli Chicken</span></div>
+							<div class="menu-item"><span>Tnadoori Chicken (Half/Full)</span></div>
+					</div>
+				</section>
+				<section>
+					<div id="maincourse" class="menu-section">
+						<h3>Veg</h3>
+							<div class="menu-item"><span>Dal Fry/Tadka</span></div>
+							<div class="menu-item"><span>Dal Makhani</span></div>
+							<div class="menu-item"><span>Palak Paneer</span></div>
+							<div class="menu-item"><span>Paneer Butter Masala</span></div>
+							<div class="menu-item"><span>Paneer Tikka Masala</span></div>
+							<div class="menu-item"><span>Kadai (Veg/Paneer)</span></div>
+							<div class="menu-item"><span>Veg Kholapuri</span></div>
+							<div class="menu-item"><span>Veg Hyderbadi</span></div>
+							<div class="menu-item"><span>Kaju Masala</span></div>
+							<div class="menu-item"><span>Mushroom Masala</span></div>
+							<div class="menu-item"><span>Channa Masala</span></div>
+							<div class="menu-item"><span>Bhindi Masala/Fry</span></div>
 	  
-	  <h3>NonVeg</h3>
-	      <div class="menu-item"><span>Manchurian (egg/Chicken)</span></div>
-	      <div class="menu-item"><span>Choice of Chili (egg/Chicken)</span></div>
-	      <div class="menu-item"><span>Chicken 65</span></div>
-	      <div class="menu-item"><span>Chicken Kebab</span></div>
-	      <div class="menu-item"><span>Chicken Lollipop (6pcs)</span></div>
-	      <div class="menu-item"><span>Chicken Pepper Dry </span></div>
-	      <div class="menu-item"><span>Lemon Chicken </span></div>
-	      <div class="menu-item"><span>Chicken Tikka</span></div>
-	      <div class="menu-item"><span>Loaded Chicken Nachos</span></div>
-	      <div class="menu-item"><span>Double Egg Omelette</span></div>
-	      <div class="menu-item"><span>Chilli Chicken</span></div>
-	      <div class="menu-item"><span>Tnadoori Chicken (Half/Full)</span></div>
-      </div>
-</section>
+						<h3>NonVeg</h3>
+							<div class="menu-item"><span>Butter Chicken</span></div>
+							<div class="menu-item"><span>Kadai Chicken</span></div>
+							<div class="menu-item"><span>Chicken Tikka Masala</span></div>
+							<div class="menu-item"><span>Chicken Kholapuri</span></div>
+							<div class="menu-item"><span>Chicken Hyderbadi</span></div>
+							<div class="menu-item"><span>Egg Burji</span></div>
+							<div class="menu-item"><span>Egg Masala</span></div>
+	  
+						<h3>India Breads</h3>
+							<div class="menu-item"><span>Roti/Butter Roti</span></div>
+							<div class="menu-item"><span>Naan/Butter Naan</span></div>
+							<div class="menu-item"><span>Kulcha/Butter Kulcha</span></div>
+							<div class="menu-item"><span>Phulka/Chapati</span></div>
+						</div>
+				</section>
 	
-    <section>
-      <div id="maincourse" class="menu-section">
-	  <h3>Veg</h3>
-	      <div class="menu-item"><span>Dal Fry/Tadka</span></div>
-	      <div class="menu-item"><span>Dal Makhani</span></div>
-	      <div class="menu-item"><span>Palak Paneer</span></div>
-      <div class="menu-item"><span>Paneer Butter Masala</span></div>
-	  <div class="menu-item"><span>Paneer Tikka Masala</span></div>
-      <div class="menu-item"><span>Kadai (Veg/Paneer)</span></div>
-	  <div class="menu-item"><span>Veg Kholapuri</span></div>
-      <div class="menu-item"><span>Veg Hyderbadi</span></div>
-	  <div class="menu-item"><span>Kaju Masala</span></div>
-      <div class="menu-item"><span>Mushroom Masala</span></div>
-	  <div class="menu-item"><span>Channa Masala</span></div>
-      <div class="menu-item"><span>Bhindi Masala/Fry</span></div>
-	  
-	  <h3>NonVeg</h3>
-	  <div class="menu-item"><span>Butter Chicken</span></div>
-      <div class="menu-item"><span>Kadai Chicken</span></div>
-	  <div class="menu-item"><span>Chicken Tikka Masala</span></div>
-      <div class="menu-item"><span>Chicken Kholapuri</span></div>
-	  <div class="menu-item"><span>Chicken Hyderbadi</span></div>
-      <div class="menu-item"><span>Egg Burji</span></div>
-	  <div class="menu-item"><span>Egg Masala</span></div>
-	  
-	  <h3>India Breads</h3>
-	  <div class="menu-item"><span>Roti/Butter Roti</span></div>
-      <div class="menu-item"><span>Naan/Butter Naan</span></div>
-	  <div class="menu-item"><span>Kulcha/Butter Kulcha</span></div>
-	  <div class="menu-item"><span>Phulka/Chapati</span></div>
+				<section>
+					<div id="rice" class="menu-section">
+						<div class="menu-item"><span>Jeera Rice/ Ghee Rice</span></div>
+						<div class="menu-item"><span>Veg Pulav</span></div>
+						<div class="menu-item"><span>Fried Rice (Veg/Egg/Chicken)</span></div>
+						<div class="menu-item"><span>Hakka Noodles (Veg/Egg/Chicken)</span></div>
+						<div class="menu-item"><span>Schezwan Fried Rice (Veg/Egg/Chicken)</span></div>
+						<div class="menu-item"><span>Schezwan Noodles (Veg/Egg/Chicken)</span></div>
+						<div class="menu-item"><span>Veg Biryani</span></div>
+						<div class="menu-item"><span>Paneer Biryani</span></div>
+						<div class="menu-item"><span>Mushroom Biryani</span></div>
+						<div class="menu-item"><span>Egg Biryani</span></div>
+						<div class="menu-item"><span>Chicken Biryani</span></div>
+						<div class="menu-item"><span>Pasta Arrabiata (Veg/Chicken)</span></div>
+						<div class="menu-item"><span>Pasta Arrabiata (Veg/Chicken)</span></div>
+					</div>
+				</section>
 
-    </div>
-	</section>
+				<section>
+					<div id="desserts" class="menu-section">
+						<div class="menu-item"><span>Chocolate Cake</span></div>
+						<div class="menu-item"><span>Ice Cream</span></div>
+					</div>
+				</section>
 	
-	 <section>
-      <div id="rice" class="menu-section">
-      <div class="menu-item"><span>Jeera Rice/ Ghee Rice</span></div>
-      <div class="menu-item"><span>Veg Pulav</span></div>
-	  <div class="menu-item"><span>Fried Rice (Veg/Egg/Chicken)</span></div>
-      <div class="menu-item"><span>Hakka Noodles (Veg/Egg/Chicken)</span></div>
-	  <div class="menu-item"><span>Schezwan Fried Rice (Veg/Egg/Chicken)</span></div>
-      <div class="menu-item"><span>Schezwan Noodles (Veg/Egg/Chicken)</span></div>
-	  <div class="menu-item"><span>Veg Biryani</span></div>
-      <div class="menu-item"><span>Paneer Biryani</span></div>
-	  <div class="menu-item"><span>Mushroom Biryani</span></div>
-      <div class="menu-item"><span>Egg Biryani</span></div>
-	  <div class="menu-item"><span>Chicken Biryani</span></div>
-	  <div class="menu-item"><span>Pasta Arrabiata (Veg/Chicken)</span></div>
-      <div class="menu-item"><span>Pasta Arrabiata (Veg/Chicken)</span></div>
-    </div>
-	</section>
+				<section>
+					<div id="beverages" class="menu-section">
+						<div class="menu-item"><span>Coffee</span></div>
+						<div class="menu-item"><span>Lemonade</span></div>
+					</div>
+				</section>
+			</div>
+            
+	<div id="location" class="location-container">
+	 <div class="locationheading" >
+            <div class="left">
+						<p>411, 4th Cross Road Block 3 HMT LAYOUT, OPP SAPNA MART,YESWANTHPUR, CAMPUS, Nagasandra, Bengaluru, Karnataka 560073</p>
+               
+            </div>
+		</div>
+	</div>
+        <div class="SocialMedia">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+        </div>
 
-    <section>
-      <div id="desserts" class="menu-section">
-      <div class="menu-item"><span>Chocolate Cake</span></div>
-      <div class="menu-item"><span>Ice Cream</span></div>
-    </div>
-	</section>
+        <div class="bottom">
+            </div>
+        </div>
 
-    <section>
-      <div id="beverages" class="menu-section">
-      <div class="menu-item"><span>Coffee</span></div>
-      <div class="menu-item"><span>Lemonade</span></div>
-    </div>
-	</section>
-  </div>
-  
-    <script>
-    function showMenu(type) {
-      const Starters = document.getElementById('Starters');
-      const maincourse = document.getElementById('maincourse');
-	  const rice = document.getElementById('rice');
-      const desserts = document.getElementById('desserts');
-	  const beverages = document.getElementById('beverages');
+	<script>
+		function showOption(type) {
+			const home = document.getElementById('home');
+			const menu = document.getElementById('menu');
+			const location = document.getElementById('location');
+			const contact = document.getElementById('contact');
+	  
+			home.style.display = (type === 'home' || type === 'full') ? 'block' : 'none';
+			menu.style.display = (type === 'menu' || type === 'full') ? 'block' : 'none';
+			location.style.display = (type === 'location' || type === 'full') ? 'block' : 'none';
+			contact.style.display = (type === 'contact' || type === 'full') ? 'block' : 'none';
+        }
+		// Default to home
+		showOption('home');
+	
+		function showMenu(type) {
+			const Starters = document.getElementById('Starters');
+			const maincourse = document.getElementById('maincourse');
+			const rice = document.getElementById('rice');
+			const desserts = document.getElementById('desserts');
+			const beverages = document.getElementById('beverages');
 
-      Starters.style.display = (type === 'Starters' || type === 'full') ? 'block' : 'none';
-      maincourse.style.display = (type === 'maincourse' || type === 'full') ? 'block' : 'none';
-	  rice.style.display = (type === 'rice' || type === 'full') ? 'block' : 'none';
-	  desserts.style.display = (type === 'desserts' || type === 'full') ? 'block' : 'none';
-      beverages.style.display = (type === 'beverages' || type === 'full') ? 'block' : 'none';
-    }
-
-    // Default to full menu
-    showMenu('Starters');
-  </script>
-  
-</body>
+			Starters.style.display = (type === 'Starters' || type === 'full') ? 'block' : 'none';
+			maincourse.style.display = (type === 'maincourse' || type === 'full') ? 'block' : 'none';
+			rice.style.display = (type === 'rice' || type === 'full') ? 'block' : 'none';
+			desserts.style.display = (type === 'desserts' || type === 'full') ? 'block' : 'none';
+			beverages.style.display = (type === 'beverages' || type === 'full') ? 'block' : 'none';
+		}
+		// Default to Starters
+		showMenu('Starters');
+		
+	</script> 		
+  </body>
 </html>
