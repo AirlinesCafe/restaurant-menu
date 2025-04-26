@@ -26,6 +26,7 @@ body{
 	margin-top: 20px;
     position: relative;
     left:-180px;
+	margin-bottom: 60px;
 }
 
 a{
@@ -50,6 +51,7 @@ a:hover{
     color:orange;
     font-size: 35px;
     text-decoration:none;
+	margin-bottom: 60px;
 }
 
 .search{
