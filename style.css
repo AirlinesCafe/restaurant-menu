@@ -18,20 +18,20 @@ body{
 }
 .logo{
 	margin-top: 20px;
-    font-size: 80px;
+    font-size: 100px;
     color:orange;
 }
 .nav{
 	margin-top: 20px;
     position: relative;
     center: -180px;
-	font-size: 48px;
+	font-size: 78px;
 }
 .menunav{
 	margin-top: 50px;
 	margin-left: 0px;
     color:orange;
-    font-size: 28px;
+    font-size: 58px;
 }
 a{
 	margin-top: 20px;
