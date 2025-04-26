@@ -22,9 +22,9 @@ body{
     color:orange;
 }
 .nav{
-	margin-top: 40px;
+		margin-top: 20px;
     position: relative;
-        center:-180px;
+    center:-180px;
 }
 
 a{
