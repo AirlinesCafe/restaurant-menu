@@ -22,7 +22,7 @@ body{
     color:orange;
 }
 .nav{
-	margin-top: 20px;
+	margin-top: 50px;
     position: relative;
     center: -180px;
 	font-size: 48px;
@@ -31,7 +31,7 @@ body{
 	margin-top: 20px;
 	margin-left: 0px;
     color:orange;
-    font-size: 38px;
+    font-size: 58px;
 }
 a{
 	margin-top: 20px;
@@ -134,7 +134,7 @@ h3{
 .menu-item{
     padding:5px 15px;
     color:white;
-    font-size: 12px;
+    font-size: 08px;
     text-decoration:none;
 }
 
