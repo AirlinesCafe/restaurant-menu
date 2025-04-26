@@ -23,12 +23,13 @@ body{
 .nav{
     position: relative;
     center:-180px;
+    font-size: 60px;
 }
 
 a{
-    padding:5px 15px;
+    padding: 10px 15px;
     color:orange;
-    font-size: 22px;
+    font-size: 32px;
     text-decoration:none;
 }
 
