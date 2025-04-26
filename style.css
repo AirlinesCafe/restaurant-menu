@@ -18,7 +18,7 @@ body{
 }
 .logo{
 	margin-top: 60px;
-    font-size: 40px;
+    font-size: 60px;
     color:orange;
 }
 .nav{
@@ -28,7 +28,7 @@ body{
 	font-size: 28px;
 }
 .menunav{
-	margin-top: 50px;
+	margin-top: 150px;
 	margin-left: 0px;
     color:orange;
     font-size: 18px;
@@ -37,7 +37,7 @@ a{
 	margin-top: 40px;
     padding:5px 15px;
     color:orange;
-    font-size: 35px;
+    
     text-decoration:none;
 	margin-bottom: 40px;
 }
