@@ -17,31 +17,28 @@ body{
     padding:0px 40px;
 }
 .logo{
-	margin-top: 60px;
-    font-size: 60px;
+	margin-top: 20px;
+    font-size: 80px;
     color:orange;
 }
 .nav{
-		margin-top: 20px;
+	margin-top: 20px;
     position: relative;
-    center:-180px;
-	font-size: 28px;
+    center: -180px;
+	font-size: 48px;
 }
 .menunav{
-	margin-top: 150px;
+	margin-top: 50px;
 	margin-left: 0px;
     color:orange;
-    font-size: 18px;
+    font-size: 28px;
 }
 a{
-	margin-top: 40px;
+	margin-top: 20px;
     padding:5px 15px;
     color:orange;
-    
     text-decoration:none;
-	margin-bottom: 40px;
 }
-
 a:hover{
     color:white;
     text-decoration: underline;
